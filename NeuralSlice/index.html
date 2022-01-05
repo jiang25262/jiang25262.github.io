@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=500px, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>NeuralSlice</title>
+    <style type="text/css">
+        .container-fluid{
+            /* background-color: red; */
+            padding-top: 80px;
+        }
+        .main{
+            width:50%;
+            margin-left: 25%;
+            margin-right: 25%;
+            margin-top: 5px;
+            padding-left: 10px;
+            padding-top: 20px;
+            padding-right: 10px;
+            /* background-color: blue; */
+            border-top:1px solid gray;
+        }
+        .authors{
+            text-align: center;
+            font-size: 20px;  
+        }
+        .abstract{
+            margin-top: 15px;
+        }
+        .bibtex{
+            margin-top: 10px;
+            border-top:1px solid gray;
+        }
+        a{color:#000000;}      
+        /* a:visited {color:gray;}   */
+        a:hover {color:#0000FF;}  
+        a:active {color:gray;} 
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <h3 class="text-center">
+            NeuralSlice: Learning to Reconstruct 4D Objects
+        </h3>
+        <p class="authors">
+            <a href="#">Chenbo Jiang</a>
+        </p>
+        <!-- <p class="text-center" style="font-size: 20px; "><i>IEEE International Conference on Computer Vision (ICCV), 2021</i></p> -->
+        <div class="main">
+            <img src="figures/teaser.jpg" width = "100%">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Our method deforms a 4D template into a 4D object. When the fourth dimension w changes, different slices of our 4D object can represent different 3D meshes. Among these 3D meshes, they have different shapes and different topologies.
+            
+            <div class="abstract">
+                <h2 >
+                    Abstract
+                </h2 >
+                <p style="word-break: break-word; text-align:justify;">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We propose a novel method NeuralSlice for reconstructing 4D objects from 3D point clouds, which has different shapes and topologies from different slices. Different from the previous Spatio-temporal 4D reconstruction, our method can not only represent the change of shape but also represent the topological change to some certain extent. Our approach can create complex geometries for some 4D games. Our template-based representation can automatically adapt to the topology for 3D reconstruction tasks without subsequent modification. NeuralSlice outperformed many template-based 3D reconstruction methods and it has great potential for 4D reconstruction tasks from a 3D point cloud. We demonstrated our 4D reconstruction results, with changes in shape and topology from different slices and NeuralSlice outperformed baselines.
+                </p>
+            </div>
+            <div class="method">
+                <h2>Motivation</h2>
+                <img src="figures/motivation.jpg" width="50%" style="margin-top: 10px; margin-left:25%">
+                <p style="word-break: break-word; text-align: justify;">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   
+                </p>
+            </div>
+            <div class="method">
+                <h2>Method</h2>
+                <img src="figures/pipeline.jpg" width="100%" style="margin-top: 10px;">
+                <p style="word-break: break-word; text-align: justify;">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                </p>
+            </div>
+
+            <div class="Downloads">
+                <h2>Links</h2>
+                <p style="font-size: 20px;">&nbsp;<a href="https://github.com/jiang25262/NeuralSlice">Code</a></p>
+                <p style="font-size: 20px;">&nbsp;<a href="./NeuralSlice.pdf">Paper</a></p>
+            </div>
+
+
+            <!-- <div class="bibtex">
+                <h5 style="color: gray;">
+                    BibTex
+                </h5>
+                <pre>@inproceedings{liu2021tripartite,
+title = {Tripartite information mining and integration for image matting},
+author = {Liu, Yuhao and Xie, Jiake and Shi, Xiao and Qiao, Yu and Huang, Yujie and Tang, Yong and Yang, Xin},
+booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision},
+year = {2021}
+}</pre>
+            </div> -->
+            
+        </div>
+   
+    </div>
+</body>
+</html>
+<!--
+    Attention :
+    Alt-B can directly open this html page in Chrome
+-->
