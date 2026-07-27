@@ -152,6 +152,56 @@
       text-align: right;
     }
 
+    .news-list {
+      border-left: 1px solid var(--border);
+      display: grid;
+      gap: 14px;
+      margin-left: 8px;
+      padding-left: 22px;
+    }
+
+    .news-item {
+      align-items: baseline;
+      display: grid;
+      grid-template-columns: 78px minmax(0, 1fr);
+      gap: 16px;
+      position: relative;
+    }
+
+    .news-item::before {
+      background: var(--accent);
+      border: 3px solid var(--bg);
+      border-radius: 50%;
+      content: '';
+      height: 11px;
+      left: -28px;
+      position: absolute;
+      top: 7px;
+      width: 11px;
+    }
+
+    .news-date {
+      color: var(--accent);
+      font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+      font-size: 0.78rem;
+      font-weight: 500;
+    }
+
+    .news-copy {
+      color: var(--text-muted);
+      font-size: 0.94rem;
+    }
+
+    .news-copy a {
+      color: var(--text);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .news-copy a:hover {
+      color: var(--accent);
+    }
+
     .paper {
       align-items: flex-start;
       display: flex;
@@ -360,6 +410,26 @@
     </header>
 
     <main>
+      <section class="news-section">
+        <div class="section-header">
+          <h2>News</h2>
+        </div>
+        <div class="news-list">
+          <div class="news-item">
+            <time class="news-date" datetime="2026-05">May 2026</time>
+            <p class="news-copy"><a href="https://arxiv.org/abs/2506.05797">EqCollide</a> was accepted to the KDD 2026 AI4Science Track as an Oral presentation.</p>
+          </div>
+          <div class="news-item">
+            <time class="news-date" datetime="2026-04">Apr 2026</time>
+            <p class="news-copy">Received the FRQNT Master's Scholarship, ranked first in my research track.</p>
+          </div>
+          <div class="news-item">
+            <time class="news-date" datetime="2025-09">Sep 2025</time>
+            <p class="news-copy">Started my Ph.D. studies at McGill University and Mila.</p>
+          </div>
+        </div>
+      </section>
+
       <section>
       <div class="section-header">
         <h2>Publications</h2>
